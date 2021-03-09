@@ -75,8 +75,6 @@ This website shows pictures of 2 different dog breeds.  The user can rate the pi
 
 ## Architecture 
 
-### components!
-
 ### Rating Component
 This component tracks the rating.  There will be two of these components in the project, one to track each breed ratings.  The component will contain 2 buttons, one will increase the counter and one that will decrease the counter.  The counter will be between the two buttons showing what the current rating is.
 
