@@ -68,3 +68,20 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## Description
+This website shows pictures of 2 different dog breeds.  The user can rate the pictures by clicking on the upvote or downvote button. Once the picture is rated, a new picture will be shown. The overall rating for both breeds will be shown between the buttons.  It will also play a note increasing for upvotes and decresing for downvote.
+
+## Architecture 
+
+### components!
+
+### Rating Component
+This component tracks the rating.  There will be two of these components in the project, one to track each breed ratings.  The component will contain 2 buttons, one will increase the counter and one that will decrease the counter.  The counter will be between the two buttons showing what the current rating is.
+
+### Picture Component
+This is a sub component of the rating component. This component will display to the user the pictures of the dogs to be rated, and will show a new picture once the old picture is rated.  There will be 2 in the project.  This component will be notified when one of the buttons is clicked.  It will then call the api, inputing the breed type. It will then take the recived URL from the api and display the image to the user.
+
+### Sound Component
+This is a sub component of the rating component. This component will play music when the user presses one of the buttons.  It will play a different instrument for each breed.  It will play a higher note when the upvote is clicked, and a lower note if the downvote button is clicked.  It will take in the prior note as input, increase or decrease it depending on which button was clicked, and play that sound, updating the prior note to the current note.

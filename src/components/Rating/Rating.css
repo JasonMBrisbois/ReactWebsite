@@ -1,0 +1,9 @@
+.columnit{
+    display:flex;
+    margin: 0 1em 0;
+    justify-content: space-evenly;
+}
+.space{
+    margin-left: 1em;
+    margin-right: 1em;
+}
